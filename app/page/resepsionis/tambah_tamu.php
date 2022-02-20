@@ -55,10 +55,10 @@
           <div class="custom-select">
             <select id="status-pemesanan" name="status-pemesanan">
               <option selected>Status Pemesanan</option>
-              <option value="terima">Terima</option>
-              <option value="proses">Proses</option>
-              <option value="selesai">Selesai</option>
-              <option value="batal">Batal</option>
+              <option value="terima pesanan">Terima Pesanan</option>
+              <option value="check out">Check In</option>
+              <option value="check in">Check Tut</option>
+              <option value="batal pesanan">Batal Pesanan</option>
             </select>
           </div>
         </td>

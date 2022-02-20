@@ -65,20 +65,20 @@
           <div class="custom-select">
             <select id="status-pemesanan" name="status-pemesanan" value="<?php echo $data['status_pemesanan']; ?>">
               <?php 
-                if($data['status_pemesanan'] == "terima"){ 
-                  echo "<option value='terima' selected>Terima</option>"; 
-                }elseif($data['status_pemesanan'] == "proses"){
-                  echo "<option value='proses' selected>Proses</option>"; 
-                }elseif($data['status_pemesanan'] == "selesai"){
-                  echo "<option value='selesai' selected>Selesai</option>"; 
-                }elseif($data['status_pemesanan'] == "batal"){
-                  echo "<option value='batal' selected>Batal</option>"; 
+                if($data['status_pemesanan'] == "terima pesanan"){ 
+                  echo "<option value='terima pesanan' selected>Terima Pesanan</option>"; 
+                }elseif($data['status_pemesanan'] == "check in"){
+                  echo "<option value='check in' selected>Check In</option>"; 
+                }elseif($data['status_pemesanan'] == "check out"){
+                  echo "<option value='check out' selected>Check Out</option>"; 
+                }elseif($data['status_pemesanan'] == "batal pesanan"){
+                  echo "<option value='batal pesanan' selected>Batal Pesanan</option>"; 
                 }
               ?>
-              <option value="terima">Terima</option>
-              <option value="proses">Proses</option>
-              <option value="selesai">Selesai</option>
-              <option value="batal">Batal</option>
+              <option value="terima pesanan">Terima Pesanan</option>
+              <option value="check in">Check In</option>
+              <option value="check out">Check Out</option>
+              <option value="batal pesanan">Batal Pesanan</option>
             </select>
           </div>
         </td>
