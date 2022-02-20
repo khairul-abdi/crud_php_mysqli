@@ -1,4 +1,4 @@
-<?php include "templates-admin/header.php"; ?>
+<?php include "../../templates-admin/header.php"; ?>
 <div class="main form-detail">
   <br />
   <a href="resepsionis.php"><i class="fa-solid fa-arrow-left-long"></i> KEMBALI</a>
@@ -84,4 +84,4 @@
     </table>
   </form>
 </div>
-<?php include "templates-admin/footer.php"; ?>
+<?php include "../../templates-admin/footer.php"; ?>

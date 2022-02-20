@@ -1,4 +1,4 @@
-<?php include "templates-admin/header.php"; ?>
+<?php include "../../templates-admin/header.php"; ?>
 <div class="main">
   <div class="search">
     <div class="search-container">
@@ -10,7 +10,7 @@
   </div>
 
   <div class="section">
-    <a href="tambah.php"><i class="fa-solid fa-circle-plus"></i> TAMBAH TAMU</a>
+    <a href="tambah_tamu.php"><i class="fa-solid fa-circle-plus"></i> TAMBAH TAMU</a>
   </div>
 
   <div>
@@ -27,7 +27,7 @@
       </thead>
       <tbody>
         <?php
-        include 'koneksi.php';
+        include '../../config/koneksi.php';
         $no = 1;
         $data = mysqli_query($koneksi, "SELECT * FROM transaksi");
         while ($user = mysqli_fetch_array($data)) {
@@ -39,7 +39,7 @@
             <td><?= $user['check_out']; ?></td>
             <td><?= $user['status_pemesanan']; ?></td>
             <td class="d-flex justify-content-evenly">
-              <a href="detail.php?id=<?php echo $user['id']; ?>">Detail</a>
+              <a href="detail_tamu.php?id=<?php echo $user['id']; ?>">Detail</a>
               <a href="edit.php?id=<?php echo $user['id']; ?>">Ubah</a>
               <a href="hapus.php?id=<?php echo $user['id']; ?>">Hapus</a>
             </td>
@@ -51,4 +51,4 @@
     </table>
   </div>
 </div>
-<?php include "templates-admin/footer.php"; ?>
+<?php include "../../templates-admin/footer.php"; ?>
