@@ -40,8 +40,8 @@
             <td><?= $user['status_pemesanan']; ?></td>
             <td class="d-flex justify-content-evenly">
               <a href="detail_tamu.php?id=<?php echo $user['id']; ?>">Detail</a>
-              <a href="edit.php?id=<?php echo $user['id']; ?>">Ubah</a>
-              <a href="hapus.php?id=<?php echo $user['id']; ?>">Hapus</a>
+              <a href="edit_tamu.php?id=<?php echo $user['id']; ?>">Ubah</a>
+              <a href="hapus_tamu.php?id=<?php echo $user['id']; ?>">Hapus</a>
             </td>
           </tr>
         <?php
