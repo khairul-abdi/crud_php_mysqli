@@ -3,7 +3,7 @@
   <br />
   <a href="resepsionis.php"><i class="fa-solid fa-arrow-left-long"></i> KEMBALI</a>
   <h3>TAMBAH DATA TAMU</h3>
-  <form method="post" action="tambah_aksi.php">
+  <form method="post" action="tambah_tamu_aksi.php">
     <table>
       <tr>
         <td>Nama Pemesanan</td>

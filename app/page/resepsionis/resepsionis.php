@@ -1,4 +1,4 @@
-<?php include "../../templates-admin/header.php"; ?>
+<?php include "../../templates-admin/header.php"; ?> 
 <div class="main">
   <div class="search">
     <div class="search-container">
