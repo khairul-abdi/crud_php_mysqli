@@ -1,10 +1,16 @@
-<?php include "../../templates-admin/header.php"; ?> 
+<?php include "../../templates-admin/header.php"; ?>
 <div class="main">
   <div class="search">
     <div class="search-container">
-      <form action="/action_page.php">
-        <input type="text" placeholder="Search.." name="search" class="search-input">
-        <button type="submit" class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <form action="" method="post">
+        <input type="date" class="calender" id="search-by-date" name="search-by-date">
+        <button type="submit" class="btn-search" name="cari">Cari tanggal</button>
+      </form>
+    </div>
+    <div class="search-container">
+      <form action="" method="post">
+        <input type="text" placeholder="Search.." id="search" name="search" class="search-input">
+        <button type="submit" class="btn-search" name="cari"><i class="fa-solid fa-magnifying-glass"></i></button>
       </form>
     </div>
   </div>
@@ -30,6 +36,20 @@
         include '../../config/koneksi.php';
         $no = 1;
         $data = mysqli_query($koneksi, "SELECT * FROM transaksi");
+
+        // tombol cari ditekan
+        if (isset($_POST["cari"])) {
+          if (isset($_POST["search"])) {
+            $keyword = $_POST["search"];
+            $data = mysqli_query($koneksi, "SELECT * FROM transaksi WHERE nama_tamu LIKE '%$keyword%'");
+          } elseif (isset($_POST["search-by-date"])) {
+            $keyword = $_POST["search-by-date"];
+            $data = mysqli_query($koneksi, "SELECT * FROM transaksi WHERE check_in LIKE '%$keyword%' OR check_out LIKE '%$keyword%'");
+          } elseif (isset($_POST["search"]) == "" && isset($_POST["search-by-date"]) == "") {
+            $data = mysqli_query($koneksi, "SELECT * FROM transaksi");
+          }
+        }
+
         while ($user = mysqli_fetch_array($data)) {
         ?>
           <tr>
@@ -52,3 +72,4 @@
   </div>
 </div>
 <?php include "../../templates-admin/footer.php"; ?>
+
