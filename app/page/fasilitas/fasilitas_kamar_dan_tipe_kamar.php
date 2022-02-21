@@ -26,7 +26,7 @@
               <td><?= $data['nama']; ?></td>
               <td><?= $data['jumlah_kamar']; ?></td>
               <td class="d-flex justify-content-evenly">
-                <a href="tipe_kamar/lihat_tipe_kamar.php?id=<?php echo $data['id']; ?>">Lihat</a>
+                <a href="tipe_kamar/detail_tipe_kamar.php?id=<?php echo $data['id']; ?>">Lihat</a>
                 <a href="tipe_kamar/edit_tipe_kamar.php?id=<?php echo $data['id']; ?>">Ubah</a>
                 <a href="tipe_kamar/hapus_tipe_kamar.php?id=<?php echo $data['id']; ?>">Hapus</a>
               </td>
