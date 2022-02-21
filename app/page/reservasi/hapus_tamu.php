@@ -9,6 +9,6 @@ $id = $_GET['id'];
 mysqli_query($koneksi,"DELETE FROM transaksi WHERE id='$id'");
  
 // mengalihkan halaman kembali ke index.php
-header("location:resepsionis.php");
+header("location:reservasi.php");
  
 ?>

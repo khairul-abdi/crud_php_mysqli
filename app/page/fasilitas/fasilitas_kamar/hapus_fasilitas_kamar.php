@@ -1,6 +1,6 @@
 <?php 
 // koneksi database
-include '../../config/koneksi.php';
+include '../../../config/koneksi.php';
  
 // menangkap data id yang di kirim dari url
 $id = $_GET['id'];
@@ -9,6 +9,6 @@ $id = $_GET['id'];
 mysqli_query($koneksi,"DELETE FROM mebel WHERE id='$id'");
  
 // mengalihkan halaman kembali ke index.php
-header("location:fasilitas_kamar.php");
+header("location: ../fasilitas_kamar_dan_tipe_kamar.php");
  
 ?>

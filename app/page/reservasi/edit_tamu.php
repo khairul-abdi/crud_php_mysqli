@@ -1,7 +1,7 @@
 <?php include "../../templates-admin/header.php"; ?>
 <div class="main form-detail">
   <br />
-  <a href="resepsionis.php"><i class="fa-solid fa-arrow-left-long"></i> KEMBALI</a>
+  <a href="reservasi.php"><i class="fa-solid fa-arrow-left-long"></i> KEMBALI</a>
   <h3>UBAH DATA TAMU</h3>
   <?php
     include '../../config/koneksi.php';
@@ -9,7 +9,7 @@
     $datas = mysqli_query($koneksi, "SELECT * FROM transaksi WHERE id='$id'");
     while($data = mysqli_fetch_array($datas)){
   ?>
-  <form method="post" action="edit_aksi.php">
+  <form method="post" action="edit_tamu_aksi.php">
     <table>
       <tr>
         <td>Nama Pemesanan</td>

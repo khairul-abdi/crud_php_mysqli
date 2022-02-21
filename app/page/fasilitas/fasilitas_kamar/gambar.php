@@ -1,5 +1,5 @@
 <?php
-include '../../config/koneksi.php';
+include '../../../config/koneksi.php';
 
 if (isset($_GET['id'])) {
   $sql = "SELECT tipe_gambar,data_gambar FROM mebel WHERE id=" . $_GET['id'];

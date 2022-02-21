@@ -31,11 +31,11 @@ $sql = "INSERT INTO transaksi " .
   "('$nama_pemesan', '$email', '$phone', '$nama_tamu', '$tipe_fasilitas', '$check_in', '$check_out', '$total_kamar', '$status_pemesanan', '$created_at', '$updated_at')";
 
 if ($koneksi->query($sql)) {
-  printf("Record inserted successfully.<br />");
+  printf("Data berhasil di masukkan ke database  .<br />");
 }
 if ($koneksi->errno) {
-  printf("Could not insert record into table: %s<br />", $mysqli→error);
+  printf("Gagal memasukkan data ke database %s<br />", $$koneksi->error);
 }
 
 // mengalihkan halaman kembali ke index.php
-header("location:resepsionis.php");
+header("location:reservasi.php");

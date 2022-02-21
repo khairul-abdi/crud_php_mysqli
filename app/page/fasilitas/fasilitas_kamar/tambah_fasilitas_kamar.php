@@ -1,9 +1,9 @@
-<?php include "../../templates-admin/header.php"; ?>
+<?php include "../../../templates-admin/header.php"; ?>
 <div class="main form-detail">
   <br />
-  <a href="fasilitas_kamar.php"><i class="fa-solid fa-arrow-left-long"></i> KEMBALI</a>
-  <h3>TAMBAH DATA TAMU</h3>
-  <form enctype="multipart/form-data" method="post" action="tambah_fasilitas_aksi.php">
+  <a href="../fasilitas_kamar_dan_tipe_kamar.php"><i class="fa-solid fa-arrow-left-long"></i> KEMBALI</a>
+  <h3>TAMBAH DATA KAMAR</h3>
+  <form enctype="multipart/form-data" method="post" action="tambah_fasilitas_kamar_aksi.php">
     <table>
       <tr>
         <td>Tipe Kamar</td>
@@ -46,4 +46,4 @@
     </table>
   </form>
 </div>
-<?php include "../../templates-admin/footer.php"; ?>
+<?php include "../../../templates-admin/footer.php"; ?>

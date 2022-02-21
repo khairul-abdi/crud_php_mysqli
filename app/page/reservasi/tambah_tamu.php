@@ -1,7 +1,7 @@
 <?php include "../../templates-admin/header.php"; ?>
 <div class="main form-detail">
   <br />
-  <a href="resepsionis.php"><i class="fa-solid fa-arrow-left-long"></i> KEMBALI</a>
+  <a href="reservasi.php"><i class="fa-solid fa-arrow-left-long"></i> KEMBALI</a>
   <h3>TAMBAH DATA TAMU</h3>
   <form method="post" action="tambah_tamu_aksi.php">
     <table>
@@ -56,8 +56,8 @@
             <select id="status-pemesanan" name="status-pemesanan">
               <option selected>Status Pemesanan</option>
               <option value="terima pesanan">Terima Pesanan</option>
-              <option value="check out">Check In</option>
-              <option value="check in">Check Tut</option>
+              <option value="check in">Check In</option>
+              <option value="check out">Check Out</option>
               <option value="batal pesanan">Batal Pesanan</option>
             </select>
           </div>

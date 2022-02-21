@@ -49,7 +49,7 @@
 	?>
   </table>
 
-  <a href="resepsionis.php"><i class="fa-solid fa-arrow-left-long"></i> KEMBALI</a>
+  <a href="reservasi.php"><i class="fa-solid fa-arrow-left-long"></i> KEMBALI</a>
 </div>
 
 <?php include "../../templates-admin/footer.php"; ?>

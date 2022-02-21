@@ -1,4 +1,4 @@
--- Untuk fasilitas_kamar.php
+-- Untuk fasilitas_kamar_dan_tipe_kamar.php
 SELECT mebel.id, 
        tipe_kamar.nama as tipe_kamar, 
        mebel.nama as fasilitas_kamar 
