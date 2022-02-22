@@ -1,0 +1,58 @@
+Designer
+- normal: #ff4467
+- hover: #ff6481
+
+Ecommerce
+- normal:  #12b878
+- hover: #20c788
+
+SEO
+- normal: #30bda7
+- hover: #34c9b2
+
+Editor
+- normal: #3fa1f7
+- hover: #4fadff
+
+CMS
+- normal: #7d6fc7
+- hover: #9085da
+
+Interaction
+- normal: #c263b5
+- hover: #d36ec6
+
+----------------------------------------------------------
+link untuk navbar
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_searchbar3
+https://www.w3schools.com/howto/howto_css_searchbar.asp
+
+----------------------------------------------------------
+link untuk combo box
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_custom_select
+
+----------------------------------------------------------
+link untuk kalender
+https://codepen.io/maheshambure21/pen/VYJQYG
+
+----------------------------------------------------------
+link untuk table daftar tamu
+https://www.w3schools.com/tags/tag_th.asp
+
+----------------------------------------------------------
+
+link untuk QUERY DATABASE
+https://www.tutorialspoint.com/mysqli/mysqli_insert_query.htma 
+
+----------------------------------------------------------
+
+Link untuk QUERY One To Many
+https://stackoverflow.com/questions/15251761/sql-query-one-to-many-relationship/15251847
+
+----------------------------------------------------------
+Link untuk Upload File
+https://phppot.com/php/mysql-blob-using-php/
+
+----------------------------------------------------------
+Link untuk Show Galery Image
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_gallery

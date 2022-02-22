@@ -19,7 +19,7 @@
       <a href="#home">Hotel Hebat</a>
       <div class="right-container">
         <a class="active" href="http://localhost/php_crud_hotel_reservation/app/page/reservasi/reservasi.php">Reservasi</a>
-        <a href="http://localhost/php_crud_hotel_reservation/app/page/fasilitas-kamar/fasilitas_kamar_dan_tipe_kamar.php">Fasilitas Kamar</a>
+        <a href="http://localhost/php_crud_hotel_reservation/app/page/fasilitas/fasilitas_kamar_dan_tipe_kamar.php">Fasilitas Kamar</a>
         <a href="#contact">Fasilitas Hotel</a>
       </div>
     </div>
