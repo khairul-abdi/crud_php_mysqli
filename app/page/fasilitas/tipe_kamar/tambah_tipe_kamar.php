@@ -10,8 +10,8 @@
         <td><input type="text" id="tipe-kamar" name="tipe-kamar"></td>
       </tr>
       <tr>
-        <td>Jumlah Kamar</td>
-        <td><input type="text" id="jumlah-kamar" name="jumlah-kamar"></td>
+        <td>Total Kamar</td>
+        <td><input type="text" id="total-kamar" name="total-kamar"></td>
       </tr>
       <tr>
         <td></td>

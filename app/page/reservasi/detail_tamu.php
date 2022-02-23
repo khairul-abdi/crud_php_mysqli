@@ -38,7 +38,7 @@
     </tr>
     <tr>
       <th scope="row">Jumlah kamar</th>
-      <td><?= $data['total_kamar'] ?></td>
+      <td><?= $data['jumlah_kamar'] ?></td>
     </tr>
     <tr>
       <th scope="row">Status Pemesan</th>

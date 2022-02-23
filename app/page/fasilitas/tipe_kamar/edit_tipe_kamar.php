@@ -17,8 +17,8 @@
           <td><input type="text" id="tipe-kamar" name="tipe-kamar" value="<?php echo $data['nama']; ?>"></td>
         </tr>
         <tr>
-          <td>Jumlah Kamar</td>
-          <td><input type="text" id="jumlah-kamar" name="jumlah-kamar" value="<?php echo $data['jumlah_kamar']; ?>"></td>
+          <td>Total Kamar</td>
+          <td><input type="text" id="total-kamar" name="total-kamar" value="<?php echo $data['total_kamar']; ?>"></td>
         </tr>
         <tr>
           <td></td>

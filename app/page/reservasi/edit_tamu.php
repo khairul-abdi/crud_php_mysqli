@@ -57,7 +57,7 @@
       </tr>
       <tr>
         <td>Jumlah Kamar</td>
-        <td><input type="text" id="jumlah-kamar" name="jumlah-kamar" value="<?php echo $data['total_kamar']; ?>"></td>
+        <td><input type="text" id="jumlah-kamar" name="jumlah-kamar" value="<?php echo $data['jumlah_kamar']; ?>"></td>
       </tr>
       <tr>
         <td>Status Pemesanan</td>

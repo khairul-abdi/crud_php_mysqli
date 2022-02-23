@@ -24,7 +24,7 @@
             <tr>
               <td scope="row" style="text-align: center;"><?= $no++ ?></td>
               <td><?= $data['nama']; ?></td>
-              <td><?= $data['jumlah_kamar']; ?></td>
+              <td><?= $data['total_kamar']; ?></td>
               <td class="d-flex justify-content-evenly">
                 <a href="tipe_kamar/detail_tipe_kamar.php?id=<?php echo $data['id']; ?>">Lihat</a>
                 <a href="tipe_kamar/edit_tipe_kamar.php?id=<?php echo $data['id']; ?>">Ubah</a>
@@ -57,7 +57,7 @@
           <?php
           include '../../config/koneksi.php';
           $no = 1;
-          $data = mysqli_query($koneksi, "SELECT mebel.id, tipe_kamar.nama as tipe_kamar, mebel.nama as fasilitas_kamar FROM mebel LEFT JOIN tipe_kamar ON tipe_kamar.id = mebel.id_tipe_kamar ORDER BY mebel.id;");
+          $data = mysqli_query($koneksi, "SELECT mebel.id, tipe_kamar.nama as tipe_kamar, mebel.nama as fasilitas_kamar FROM mebel LEFT JOIN tipe_kamar ON tipe_kamar.id = mebel.id_tipe_kamar ORDER BY tipe_kamar;");
           while ($fasilitas = mysqli_fetch_array($data)) {
           ?>
             <tr>

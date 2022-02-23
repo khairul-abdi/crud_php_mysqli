@@ -97,7 +97,7 @@ CREATE TABLE `transaksi` (
   `tipe_fasilitas` varchar(100) DEFAULT NULL,
   `check_in` date DEFAULT NULL,
   `check_out` date DEFAULT NULL,
-  `total_kamar` int(11) DEFAULT NULL,
+  `jumlah_kamar` int(11) DEFAULT NULL,
   `status_pemesanan` varchar(100) DEFAULT NULL,
   `created_at` date DEFAULT NULL,
   `updated_at` date DEFAULT NULL
@@ -107,7 +107,7 @@ CREATE TABLE `transaksi` (
 -- Dumping data for table `transaksi`
 --
 
-INSERT INTO `transaksi` (`id`, `nama_pemesan`, `email`, `phone`, `nama_tamu`, `tipe_fasilitas`, `check_in`, `check_out`, `total_kamar`, `status_pemesanan`, `created_at`, `updated_at`) VALUES
+INSERT INTO `transaksi` (`id`, `nama_pemesan`, `email`, `phone`, `nama_tamu`, `tipe_fasilitas`, `check_in`, `check_out`, `jumlah_kamar`, `status_pemesanan`, `created_at`, `updated_at`) VALUES
 (4, 'ikan KFC', 'ikan@gmail.com', '08535836776', 'ikan KFC', 'deluxe', '2022-02-20', '2022-02-26', 3, 'terima', '1970-01-01', '2022-02-20'),
 (5, 'diah puja', 'diah@gmail.com', '085356663333', 'diah puja', 'deluxe', '2022-02-01', '2022-02-05', 2, 'terima', '2022-02-18', '2022-02-20'),
 (6, 'khairul', 'abdi@gmail.com', '085666755643', 'khairul', 'superior', '2022-02-18', '2022-02-18', 3, 'terima', '1970-01-01', '1970-01-01'),

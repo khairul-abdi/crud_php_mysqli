@@ -7,7 +7,7 @@ CREATE TABLE `transaksi` (
   `tipe_fasilitas` varchar(100) DEFAULT NULL,
   `check_in` date DEFAULT NULL,
   `check_out` date DEFAULT NULL,
-  `total_kamar` int DEFAULT NULL,
+  `jumlah_kamar` int DEFAULT NULL,
   `status_pemesanan` varchar(100) DEFAULT NULL,
   `created_at` date DEFAULT NULL,
   `updated_at` date DEFAULT NULL,
