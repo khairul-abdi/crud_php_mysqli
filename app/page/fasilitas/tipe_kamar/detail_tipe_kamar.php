@@ -39,6 +39,7 @@
         </div>
       <?php
       }
+      $no = 0;
       ?>
     </div>
     <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -47,20 +48,21 @@
       <p id="caption"></p>
     </div>
 
-    <div>
-      <h2> Tipe <?php echo ucfirst($data['nama']); ?></h2>
-    </div>
-
     <div class="row">
       <?php
+      $nos = 0;
       foreach ($tipeKamar as $row) {
       ?>
         <div class="column">
-          <img class="demo cursor" src="image_view.php?id=<?php echo $row['id']; ?>" style="width:100%" onclick="currentSlide(1)" alt="<?php echo $row['fasilitas_kamar'] ?>">
+          <img class="demo cursor" src="image_view.php?id=<?php echo $row['id']; ?>" style="width:100%" onclick="currentSlide(<?php $nos++; echo $nos; ?>)" alt="<?php echo $row['fasilitas_kamar'] ?>">
         </div>
       <?php
       }
       ?>
+    </div>
+
+    <div>
+      <h2> Tipe <?php echo ucfirst($data['nama']); ?></h2>
     </div>
 
     <div>
@@ -74,7 +76,6 @@
           </li>
         <?php
         }
-        $tipeKamar = [];
         ?>
       </ul>
     </div>
