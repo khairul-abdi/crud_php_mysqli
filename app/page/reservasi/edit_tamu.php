@@ -65,8 +65,8 @@
           <div class="custom-select">
             <select id="status-pemesanan" name="status-pemesanan" value="<?php echo $data['status_pemesanan']; ?>">
               <?php 
-                if($data['status_pemesanan'] == "terima pesanan"){ 
-                  echo "<option value='terima pesanan' selected>Terima Pesanan</option>"; 
+                if($data['status_pemesanan'] == "pesanan berhasil"){ 
+                  echo "<option value='pesanan berhasil' selected>Pesanan Berhasil</option>"; 
                 }elseif($data['status_pemesanan'] == "check in"){
                   echo "<option value='check in' selected>Check In</option>"; 
                 }elseif($data['status_pemesanan'] == "check out"){
@@ -75,7 +75,7 @@
                   echo "<option value='batal pesanan' selected>Batal Pesanan</option>"; 
                 }
               ?>
-              <option value="terima pesanan">Terima Pesanan</option>
+              <option value="pesanan berhasil">Pesanan Berhasil</option>
               <option value="check in">Check In</option>
               <option value="check out">Check Out</option>
               <option value="batal pesanan">Batal Pesanan</option>
