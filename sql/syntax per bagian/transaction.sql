@@ -13,3 +13,7 @@ CREATE TABLE `transaksi` (
   `updated_at` date DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4
+
+
+-- UNTUK SELECT LAST INDEX DI TABLE TRANSAKSI
+SELECT id,nama_pemesan, email, phone, nama_tamu, tipe_fasilitas, check_in, check_out, jumlah_kamar, status_pemesanan, created_at, updated_at FROM transaksi ORDER BY id DESC LIMIT 1;

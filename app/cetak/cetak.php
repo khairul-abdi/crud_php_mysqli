@@ -2,6 +2,15 @@
 
 require_once '../../mpdf_v8.0.3/vendor/autoload.php';
 
+include '../config/koneksi.php';
+$id = $_GET['id'];
+if ($id != "" ) {
+  $datas = mysqli_query($koneksi, "SELECT * FROM transaksi WHERE id='$id'");
+} else {
+  $datas = mysqli_query($koneksi, "SELECT id, nama_pemesan, email, phone, nama_tamu, tipe_fasilitas, check_in, check_out, jumlah_kamar, status_pemesanan, created_at, updated_at FROM transaksi ORDER BY id DESC LIMIT 1");
+}
+$data = mysqli_fetch_array($datas);
+
 $mpdf = new \Mpdf\Mpdf(['tempDir' => '/tmp']);
 $html = '<!DOCTYPE html>
 <html lang="en">
@@ -24,12 +33,12 @@ $html = '<!DOCTYPE html>
         <table>
           <tr>
             <td>Order ID</td>
-            <td>: #4357942</td>
-            <td>Tanggal: 12/03/2022</td>
+            <td>: #'. rand() .'</td>
+            <td>Tanggal: '. $data['created_at'].'</td>
           </tr>
           <tr>
             <td>Nama Tamu</td>
-            <td>: Maria Anders</td>
+            <td>: '.$data['nama_pemesan'].'</td>
             <td>Konfirmasi</td>
           </tr>
           <tr>
@@ -48,7 +57,7 @@ $html = '<!DOCTYPE html>
           </tr>
           <tr>
             <td>Tipe Kamar</td>
-            <td>: Deluxe</td>
+            <td>: '.$data['tipe_fasilitas'].'</td>
           </tr>
           <tr>
             <td>Alamat</td>
@@ -56,27 +65,19 @@ $html = '<!DOCTYPE html>
           </tr>
           <tr>
             <td>Tgl Masuk</td>
-            <td>: 12 Maret 2022</td>
+            <td>: '.$data['check_in'].'</td>
           </tr>
           <tr>
             <td>Tgl Keluar</td>
-            <td>: 16 Maret 2022</td>
+            <td>: '.$data['check_out'].'</td>
           </tr>
           <tr>
             <td>Jumlah Kamar</td>
-            <td>: 3</td>
+            <td>: '.$data['jumlah_kamar'].'</td>
           </tr>
           <tr>
             <td>Kasur Ekstra</td>
             <td>: -</td>
-          </tr>
-          <tr>
-            <td>Dewasa</td>
-            <td>: 6</td>
-          </tr>
-          <tr>
-            <td>Anak-Anak</td>
-            <td>: 4</td>
           </tr>
           <tr>
             <td>Sarapan</td>

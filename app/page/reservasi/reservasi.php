@@ -60,6 +60,7 @@
             <td><?= $user['status_pemesanan']; ?></td>
             <td class="d-flex justify-content-evenly">
               <a href="detail_tamu.php?id=<?php echo $user['id']; ?>">Detail</a>
+              <a href="../../cetak/cetak.php?id=<?php echo $user['id']; ?>">Cetak</a>
               <a href="edit_tamu.php?id=<?php echo $user['id']; ?>">Ubah</a>
               <a href="hapus_tamu.php?id=<?php echo $user['id']; ?>">Hapus</a>
             </td>
