@@ -38,8 +38,9 @@ function format_flash_message(array $flash_message): string
   return sprintf(
     '<div id="myModalTiket" class="modal" style="display:%s;">
       <div class="modal-content">
+        <p>Berhasil pesan tiket, silahkan klik cetak untuk mencetak atau mendownload tiketnya
         <span class="close">&times;</span>
-        <p>Some text in the Modal..</p>
+        <a href="../../cetak/cetak.php">Cetak</a>
       </div>
     </div>',
       'block'
@@ -86,3 +87,5 @@ function flash(string $name = '', string $message = '', string $type = ''): void
     display_flash_message($name);
   }
 }
+
+include "../../templates-admin/footer.php"; ?>
