@@ -1,4 +1,12 @@
-<?php include "../../templates-admin/header.php"; ?>
+<?php 
+session_start();
+if (!isset($_SESSION["login"]) && $_SESSION["role"] = 'admin') {
+  header("Location: http://localhost/php_crud_hotel_reservation/app/page/login/login.php");
+  exit;
+}
+
+include "../../templates-admin/header.php"; 
+?>
 <div class="main">
   <div>
     <div>

@@ -1,4 +1,12 @@
-<?php include "../../../templates-admin/header.php"; ?>
+<?php 
+session_start();
+if (!isset($_SESSION["login"])) {
+  header("Location: http://localhost/php_crud_hotel_reservation/app/page/login/login.php");
+  exit;
+}
+
+include "../../../templates-admin/header.php"; 
+?>
 <div class="main form-detail">
   <br />
   <a href="../fasilitas_kamar_dan_tipe_kamar.php"><i class="fa-solid fa-arrow-left-long"></i> KEMBALI</a>

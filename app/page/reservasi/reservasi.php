@@ -1,4 +1,13 @@
-<?php include "../../templates-admin/header.php"; ?>
+<?php 
+
+session_start();
+if (!isset($_SESSION["login"])) {
+  header("Location: http://localhost/php_crud_hotel_reservation/app/page/login/login.php");
+  exit;
+}
+
+include "../../templates-admin/header.php"; 
+?>
 <div class="main">
   <div class="search">
     <div class="search-container">
@@ -62,7 +71,9 @@
               <a href="detail_tamu.php?id=<?php echo $user['id']; ?>">Detail</a>
               <a href="../../cetak/cetak.php?id=<?php echo $user['id']; ?>">Cetak</a>
               <a href="edit_tamu.php?id=<?php echo $user['id']; ?>">Ubah</a>
-              <a href="hapus_tamu.php?id=<?php echo $user['id']; ?>">Hapus</a>
+              <?php if($_SESSION["role"] == "admin") {  ?>
+                <a href="hapus_tamu.php?id=<?php echo $user['id']; ?>">Hapus</a>
+              <?php }; ?>
             </td>
           </tr>
         <?php

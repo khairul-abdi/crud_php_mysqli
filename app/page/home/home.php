@@ -62,7 +62,6 @@ if (!session_id()) {
     </table>
 
     <div>
-      <a href="../../cetak/cetak.php">Cetak</a>
       <h1>TENTANG KAMI</h1>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti mollitia excepturi dolor, voluptatem, ab tempora quae saepe vel illum error laudantium in beatae tempore qui reiciendis commodi explicabo, magni molestias odit accusamus voluptatibus! Accusamus voluptas dicta id voluptatum, quas sequi magni, saepe nihil iure exercitationem voluptates dolore expedita! Perspiciatis explicabo non nostrum. Harum, alias beatae ipsam illo explicabo exercitationem modi eius sit tempora quas, odit voluptatum consectetur eveniet facilis voluptas delectus est maiores? Temporibus eos in voluptate magni, pariatur, praesentium distinctio quas nam quidem modi fugit? A quas, iure officia hic aliquam ex beatae iste quasi illo necessitatibus nobis. Aliquam.</p>
     </div>
